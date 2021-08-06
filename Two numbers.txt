@@ -1,0 +1,10 @@
+T = int(input())
+
+for x in range(T):
+    a,b,n = map(int, input().split())
+    if n%2==0:
+        print(max(a,b)//min(a,b))
+        continue
+    else:
+        print(max(2*a,b)//min(2*a,b))
+        continue
